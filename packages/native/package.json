@@ -1,9 +1,11 @@
 {
-	"name": "NativeDemo",
+	"name": "native-demo",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
 		"android": "react-native run-android",
+		"android:device": "yarn android:proxy && yarn android",
+		"android:proxy": "adb -s $(grep ANDROID_DEVICE .env | cut -d '=' -f2) reverse tcp:3000 tcp:3000",
 		"ios": "react-native run-ios",
 		"start": "react-native start",
 		"test": "jest",
@@ -16,7 +18,8 @@
 		"react-native": "0.63.2",
 		"react-native-navigation-bar-color": "^2.0.1",
 		"react-native-webview": "^10.4.1",
-		"react-redux": "^7.2.1"
+		"react-redux": "^7.2.1",
+		"webview-state-bridge": "^0.1.0"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.8.4",

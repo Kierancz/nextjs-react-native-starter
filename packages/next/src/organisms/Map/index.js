@@ -1,13 +1,12 @@
 /* eslint-disable no-undef */
 import React from 'react';
-import T from 'prop-types';
+// import T from 'prop-types';
 import ReactMapGL, { Marker, NavigationControl } from 'react-map-gl';
 import { useSelector, useDispatch } from 'react-redux';
 import Fab from '@material-ui/core/Fab';
-// import PersonPinCircleIcon from '@material-ui/icons/PersonPinCircle';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import MyLocationIcon from '@material-ui/icons/MyLocation';
-import bridgeWebDataSlice from '../../redux/reducers/bridgeWebData';
+import webDataSlice from '../../redux/reducers/webData';
 
 const createViewport = (options = {}) => ({
 	width: '100vw',
@@ -19,7 +18,7 @@ const createViewport = (options = {}) => ({
 });
 
 export default function Map() {
-	const nativeData = useSelector((state) => state.bridgeNativeData || {});
+	const nativeData = useSelector((state) => state.nativeData || {});
 	const [ viewport, setViewport ] = React.useState(createViewport());
 
 	const { currentPosition } = nativeData || {};
@@ -58,8 +57,7 @@ export default function Map() {
 			)}
 			<Fab color="primary" aria-label="add">
 				<MyLocationIcon
-					onClick={() =>
-						dispatch(bridgeWebDataSlice.actions.setBridgeWebData({ requestCurrentPosition: true }))}
+					onClick={() => dispatch(webDataSlice.actions.setWebData({ requestCurrentPosition: true }))}
 				/>
 			</Fab>
 		</ReactMapGL>

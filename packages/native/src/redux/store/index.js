@@ -1,11 +1,11 @@
-import { configureStore } from '@reduxjs/toolkit';
-import nativeToWebSync from '../middleware/nativeToWebSync';
-import bridgeNativeData from '../reducers/bridgeNativeData';
-import bridgeWebData from '../reducers/bridgeWebData';
+import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
+import { nativeMiddleware } from 'webview-state-bridge';
+import nativeData from '../reducers/nativeData';
+import webData from '../reducers/webData';
 
 const store = configureStore({
-	reducer: { bridgeNativeData: bridgeNativeData.reducer, bridgeWebData: bridgeWebData.reducer },
-	middleware: [ nativeToWebSync ]
+	reducer: { nativeData: nativeData.reducer, webData: webData.reducer },
+	middleware: [ ...getDefaultMiddleware(), nativeMiddleware ]
 });
 
 export default store;

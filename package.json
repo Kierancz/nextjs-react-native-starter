@@ -1,12 +1,17 @@
 {
 	"name": "nextjs-react-native-boilerplate",
-	"workspaces": [ "packages/*" ],
+	"workspaces": {
+		"packages": [ "packages/*" ],
+		"nohoist": [ "**/native-demo", "**/native-demo/**" ]
+	},
 	"scripts": {
 		"clean": "lerna run clean --stream --parallel",
 		"build": "lerna run build --stream --parallel",
 		"lint": "lerna run eslint . --stream --parallel",
 		"test": "lerna run test --stream --parallel",
-		"start": "lerna run start --stream --parallel"
+		"start": "lerna run start --stream",
+		"rn": "lerna exec --stream --scope native-demo yarn --",
+		"web": "lerna exec --stream --scope next-demo yarn --"
 	},
 	"devDependencies": {
 		"lerna": "^3.22.1"

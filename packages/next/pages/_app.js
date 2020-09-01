@@ -5,11 +5,10 @@ import Head from 'next/head';
 import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { Provider } from 'react-redux';
+import { WebProvider } from 'webview-state-bridge';
 import store from '../src/redux';
-import NativeDataProvider from '../src/redux/NativeBridgeProvider';
 import theme from '../src/theme';
 
-// import 'mapbox-gl/dist/mapbox-gl.css';
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
@@ -31,9 +30,9 @@ function MyApp({ Component, pageProps }) {
 			<Provider store={store}>
 				<ThemeProvider theme={theme}>
 					<CssBaseline />
-					<NativeDataProvider>
+					<WebProvider>
 						<Component {...pageProps} />
-					</NativeDataProvider>
+					</WebProvider>
 				</ThemeProvider>
 			</Provider>
 		</React.Fragment>

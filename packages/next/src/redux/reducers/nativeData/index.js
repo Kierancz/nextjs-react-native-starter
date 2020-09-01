@@ -1,13 +1,13 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const bridgeWebData = createSlice({
-	name: 'bridgeWebData',
+const nativeData = createSlice({
+	name: 'nativeData',
 	initialState: {},
 	reducers: {
-		setBridgeWebData(state, action) {
+		setNativeData(state, action) {
 			return { ...state, ...action.payload };
 		}
 	}
 });
 
-export default bridgeWebData;
+export default nativeData;

@@ -8,9 +8,9 @@ The first app is a [Next.js](https://nextjs.org/) (hybrid SSG/SSR react framewor
 
 The second is a simple `react-native` app running without the overhead of [Expo](https://expo.io/) (`webview-state-bridge` is fully compatible with Expo). The native app code is minimal, as a primary goal of this package is to provide the means to use traditional rock-solid web technologies we know and love such as react for the majority of the app code, while react-native is used as a native API provider to the react app with `webview-state-bridge` as the intuitive bridge between the two.
 
-### Demo Usage
+## Demo Usage
 
-#### Install, Build, Link
+### Install, Build, Link
 
 This repo uses yarn, make sure it's installed and run the following to install, build, and link the monorepo packages together automatically.
 
@@ -18,15 +18,41 @@ This repo uses yarn, make sure it's installed and run the following to install, 
 yarn
 ```
 
-#### Available Commands
+### Running on Android
+
+Start both native and web app servers.
+
+```sh
+yarn start
+```
+
+#### Android Emulator
+
+```sh
+yarn rn android
+```
+
+#### Android Device
+
+```sh
+yarn rn android:device
+```
+
+### Running on IOS
+
+Start metro server
 
 ```sh
 yarn rn start
 ```
 
+#### IOS Emulator
+
 ```sh
-yarn web start
+yarn rn ios
 ```
+
+WIP
 
 ## Contributing
 
