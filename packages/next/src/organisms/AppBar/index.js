@@ -7,6 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import startCase from 'lodash/startCase';
 
 import Drawer from '../Drawer';
 
@@ -27,12 +28,6 @@ export default function AppBar() {
 	const [ state, setState ] = React.useState({ open: false });
 	const router = useRouter();
 
-	const routeNameMap = {
-		'/': 'Home',
-		'/favorites': 'Favorites',
-		'/explore': 'Explore'
-	};
-
 	return (
 		<div className={classes.root}>
 			<MuiAppBar position="static">
@@ -47,7 +42,7 @@ export default function AppBar() {
 						<MenuIcon />
 					</IconButton>
 					<Typography variant="h6" className={classes.title}>
-						{routeNameMap[router.route]}
+						{router.route === '/' ? 'Home' : startCase(router.route.replace(/\//, ''))}
 					</Typography>
 					<Button color="inherit">Login</Button>
 				</Toolbar>
