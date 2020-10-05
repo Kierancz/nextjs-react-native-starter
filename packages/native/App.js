@@ -1,7 +1,4 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
  * @format
  * @flow strict-local
  */
@@ -20,9 +17,7 @@ const App = () => {
 	return (
 		<Provider store={store}>
 			<StatusBar backgroundColor="black" />
-			<WebView
-			// source={{ uri: 'https://nextest-brown.vercel.app/' }}
-			/>
+			<WebView source={{ uri: 'https://nextest-brown.vercel.app/' }} />
 		</Provider>
 	);
 };

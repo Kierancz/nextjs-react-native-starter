@@ -18,6 +18,8 @@ This repo uses yarn, make sure it's installed and run the following to install, 
 yarn
 ```
 
+### Running on Web
+
 ### Running on Android
 
 Start both native and web app servers.
