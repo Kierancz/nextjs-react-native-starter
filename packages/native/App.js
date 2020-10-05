@@ -17,9 +17,7 @@ const App = () => {
 	return (
 		<Provider store={store}>
 			<StatusBar backgroundColor="black" />
-			<WebView
-			// source={{ uri: 'https://nextest-brown.vercel.app/' }}
-			/>
+			<WebView source={{ uri: 'https://nextest-brown.vercel.app/' }} />
 		</Provider>
 	);
 };

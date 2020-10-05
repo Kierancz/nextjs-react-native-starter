@@ -46,8 +46,8 @@ export default function Map() {
 			onViewportChange={(nextViewport) => setViewport(nextViewport)}
 			mapStyle="mapbox://styles/mapbox/satellite-v9"
 		>
-			<div style={{ position: 'absolute', bottom: 64, right: 16 }}>
-				<NavigationControl />
+			<div style={{ position: 'absolute', bottom: 64, right: 24 }}>
+				<NavigationControl showCompass={false} />
 			</div>
 			{latitude &&
 			longitude && (
@@ -55,7 +55,7 @@ export default function Map() {
 					<LocationOnIcon color="primary" fontSize="large" />
 				</Marker>
 			)}
-			<Fab color="primary" aria-label="add">
+			<Fab color="primary" aria-label="add" style={{ position: 'absolute', bottom: 140, right: 12 }}>
 				<MyLocationIcon
 					onClick={() => dispatch(webDataSlice.actions.setWebData({ requestCurrentPosition: true }))}
 				/>
