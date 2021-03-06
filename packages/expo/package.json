@@ -23,7 +23,7 @@
 		"webview-state-bridge": "0.1.0"
 	},
 	"devDependencies": {
-		"@babel/core": "7.11.5",
+		"@babel/core": "7.13.8",
 		"babel-preset-expo": "8.1.1"
 	},
 	"private": true
