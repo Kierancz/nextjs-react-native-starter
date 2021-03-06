@@ -12,25 +12,25 @@
 		"lint": "eslint ."
 	},
 	"dependencies": {
-		"@react-native-community/geolocation": "^2.0.2",
-		"@reduxjs/toolkit": "^1.4.0",
+		"@react-native-community/geolocation": "2.0.2",
+		"@reduxjs/toolkit": "1.4.0",
 		"react": "16.13.1",
 		"react-native": "0.63.2",
-		"react-native-navigation-bar-color": "^2.0.1",
-		"react-native-webview": "^10.4.1",
-		"react-redux": "^7.2.1",
-		"webview-state-bridge": "^0.1.0"
+		"react-native-navigation-bar-color": "2.0.1",
+		"react-native-webview": "10.8.3",
+		"react-redux": "7.2.1",
+		"webview-state-bridge": "0.1.0"
 	},
 	"devDependencies": {
-		"@babel/core": "^7.8.4",
-		"@babel/runtime": "^7.8.4",
-		"@react-native-community/eslint-config": "^1.1.0",
-		"babel-jest": "^25.1.0",
-		"eslint": "^6.5.1",
-		"eslint-config-prettier": "^6.11.0",
-		"jest": "^25.1.0",
-		"metro-react-native-babel-preset": "^0.59.0",
-		"prettier": "^2.1.1",
+		"@babel/core": "7.11.5",
+		"@babel/runtime": "7.11.2",
+		"@react-native-community/eslint-config": "1.1.0",
+		"babel-jest": "25.5.1",
+		"eslint": "6.8.0",
+		"eslint-config-prettier": "6.11.0",
+		"jest": "25.5.4",
+		"metro-react-native-babel-preset": "0.59.0",
+		"prettier": "2.1.1",
 		"react-test-renderer": "16.13.1"
 	},
 	"jest": {
