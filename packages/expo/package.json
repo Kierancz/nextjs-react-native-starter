@@ -17,7 +17,7 @@
 		"react-dom": "16.13.1",
 		"react-native": "https://github.com/expo/react-native/archive/sdk-38.0.2.tar.gz",
 		"react-native-navigation-bar-color": "2.0.1",
-		"react-native-web": "0.11.7",
+		"react-native-web": "0.15.0",
 		"react-native-webview": "9.4.0",
 		"react-redux": "7.2.1",
 		"webview-state-bridge": "0.1.0"
