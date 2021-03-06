@@ -15,7 +15,7 @@
 		"nexpo": "lerna exec --stream --scope native-expo yarn --"
 	},
 	"devDependencies": {
-		"lerna": "^3.22.1"
+		"lerna": "3.22.1"
 	},
 	"license": "MIT",
 	"private": true
