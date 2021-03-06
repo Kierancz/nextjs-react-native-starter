@@ -13,7 +13,7 @@
 		"@material-ui/system": "4.9.14",
 		"@reduxjs/toolkit": "1.4.0",
 		"faker": "5.4.0",
-		"lodash": "4.17.20",
+		"lodash": "4.17.21",
 		"next": "9.5.2",
 		"next-offline": "5.0.2",
 		"react": "16.13.1",
