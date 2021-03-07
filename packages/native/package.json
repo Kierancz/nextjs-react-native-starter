@@ -18,7 +18,7 @@
 		"react-native": "0.63.2",
 		"react-native-navigation-bar-color": "2.0.1",
 		"react-native-webview": "10.8.3",
-		"react-redux": "7.2.1",
+		"react-redux": "7.2.2",
 		"webview-state-bridge": "0.1.0"
 	},
 	"devDependencies": {
