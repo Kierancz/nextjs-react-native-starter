@@ -12958,10 +12958,10 @@ react-is@16.13.1, react-is@^16.12.0, react-is@^16.13.1, react-is@^16.7.0, react-
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.1.tgz#5b3531bd76a645a4c9fb6e693ed36419e3301339"
   integrity sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
 
-react-map-gl@6.1.10:
-  version "6.1.10"
-  resolved "https://registry.yarnpkg.com/react-map-gl/-/react-map-gl-6.1.10.tgz#8616562d1439f5718c02e5a69379d8f200f7a099"
-  integrity sha512-TZ0GSMSY3fK6bh5wTnoUHdJRyhJLmr2flZBonTR+7Br5Q/iAtOSnr5PMH8G/IE9KZ8AmwpyzdujvQXTI3ZycUA==
+react-map-gl@6.1.11:
+  version "6.1.11"
+  resolved "https://registry.yarnpkg.com/react-map-gl/-/react-map-gl-6.1.11.tgz#f205bca135b1a738d79e248b4f0ed6da222add1e"
+  integrity sha512-Nyze/nVyL2mjqI5bBuxxf4f1hWrRKhiEjEjznmhTgrx+4yCngWkbVNBcxGZ49lO9RtYX+gXBk5PT/AYXFus4Mg==
   dependencies:
     "@babel/runtime" "^7.0.0"
     "@types/geojson" "^7946.0.7"
