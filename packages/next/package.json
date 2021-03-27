@@ -12,7 +12,7 @@
 		"@material-ui/icons": "4.11.2",
 		"@material-ui/system": "4.11.3",
 		"@reduxjs/toolkit": "1.5.1",
-		"faker": "5.4.0",
+		"faker": "5.5.0",
 		"lodash": "4.17.21",
 		"next": "10.0.9",
 		"next-offline": "5.0.3",
