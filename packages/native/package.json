@@ -13,7 +13,7 @@
 	},
 	"dependencies": {
 		"@react-native-community/geolocation": "2.0.2",
-		"@reduxjs/toolkit": "1.5.0",
+		"@reduxjs/toolkit": "1.5.1",
 		"react": "16.14.0",
 		"react-native": "0.64.0",
 		"react-native-navigation-bar-color": "2.0.1",
