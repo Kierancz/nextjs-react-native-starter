@@ -56,17 +56,6 @@ yarn rn ios
 
 WIP
 
-## Contributing
-
-We face difficult times together as our planet rapidly changes, we need to collaborate to face these daunting challenges. If this project (and/or it's companion package `webview-state-bridge`) helps you or your organization build universal apps faster, please consider contributing to the ongoing development and maintenance of this effort. We welcome any and all contributions, which may include (but not limited to) any of the following.
-
-- Reporting bugs, asking questions, proposing improvements, or any other ideas by [opening an issue](TODO-url-here).
-- Documentation improvements.
-- Example app functionality additions (this would be amazing!).
-- Code contributions! Please feel free to dig into the code to fix a bug, [open a PR](TODO-url-here), and we'll make sure the effort gets the attention it deserves.
-- Feedback! All important to improving anything, we love to hear how you or your organization are using this code, what's working, what could be improved, and what isn't appreciated.
-- Resources! If there's any related project/effort that we can link to and help our community find resources and grow, the better! Open an issue to mention it or better yet open a PR to add to the documentation.
-
 ## Other Resources
 
 This project benefits from demoing the integration of amazing open source work from the following efforts.
