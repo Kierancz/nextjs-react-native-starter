@@ -11,7 +11,7 @@
 	},
 	"dependencies": {
 		"@reduxjs/toolkit": "1.5.1",
-		"expo": "40.0.1",
+		"expo": "51.0.38",
 		"expo-status-bar": "1.0.4",
 		"react": "17.0.2",
 		"react-dom": "17.0.2",
@@ -24,7 +24,7 @@
 	},
 	"devDependencies": {
 		"@babel/core": "7.13.16",
-		"babel-preset-expo": "8.3.0"
+		"babel-preset-expo": "11.0.15"
 	},
 	"private": true
 }
